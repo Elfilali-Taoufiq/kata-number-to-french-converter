@@ -85,8 +85,13 @@ def convert_tens_to_french(number):
         return f"{basic_numbers_mapping[quotient * THEN]}"
 
 
-if __name__ == '__main__':
-    input_list = [10000]
+def main(list_number):
+    converted_numbers = list(map(convert_number_to_french, list_number))
+    return converted_numbers
 
-    converted_numbers = list(map(convert_number_to_french, input_list))
-    print(converted_numbers)
+
+if __name__ == '__main__':
+    numbers_input = input("Enter the numbers separated by spaces: ")
+    numbers_list = [int(x) for x in numbers_input.split()]
+    returned_string = main(numbers_list)
+    print(returned_string)

@@ -10,9 +10,9 @@ This Python script converts a list of integers into their French word representa
 ## Usage
 
 1. **Make sure you have Python installed.**
-2. **Save the script** as a `.py` file (e.g., `number_to_french.py`).
-3. **Create a list of numbers** you want to convert.
-4. **Run the script** from your terminal:
+2. **Navigate to src directory.**
+3. **Run the script** from your terminal:` python number_to_french.py`
+4. **Enter the numbers separated by space**
 
 
 ##  Author
