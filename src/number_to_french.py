@@ -40,6 +40,8 @@ PLURAL_S = 's'
 
 
 def convert_number_to_french(number):
+    # in case we have an entered negative number
+    number = abs(number)
     if number in basic_numbers_mapping:
         return basic_numbers_mapping[number]
 
